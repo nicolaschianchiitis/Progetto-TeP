@@ -6,3 +6,7 @@ img.navbar-favicon{
 a.navbar-favicon{
     margin-right: 4%;
 }
+
+a.nav-link-spacing{
+    margin-left: 2%;
+}
