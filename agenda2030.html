@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS Esterno -->
-    <link href="assets/img/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/img/assets/dist/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/" />
+
     <style>
         @import url(css/style.css);
     </style>
@@ -42,17 +44,18 @@
         </nav>
     </div>
 
-    <!--Introduzione-->
+    <!--cards-->
 
     <div class="container marketing">
         <div class="row featurette">
-            <div class="col-md-7">
-                <h2 style="padding-top: 20px;padding-bottom: 40px;" class="featurette-heading fw-normal lh-1">Agenda 2030 </h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-md">
+                <h2 style="padding-top: 20px;padding-bottom: 40px;" class="featurette-heading fw-normal lh-1">Agenda
+                    2030 </h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
 
                         <div class="card h-100">
-                            <img src="assets/img/global-goals-1400x630.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/global-goals-1400x630.jpg" class="card-img-top" style="height: 150px;">
                             <div class="card-body">
                                 <h5 class="card-title">Cos'è la Agenda 2030</h5>
                                 <p class="card-text">La Agenda 2030 è un'iniziativa ambiziosa per affrontare sfide
@@ -66,7 +69,7 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="assets/img/onu.jpg" class="card-img-top" alt="...">
+                            <img src="assets/img/onu.jpg" class="card-img-top" style="height: 150px">
                             <div class="card-body">
                                 <h5 class="card-title">Chi l'ha istituita</h5>
                                 <p class="card-text">La Agenda 2030 è stata istituita dalle Nazioni Unite nel 2015,
@@ -80,9 +83,9 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="assets/img/obiettivi-agenda-2030.png" class="card-img-top" alt="...">
+                            <img src="assets/img/goals.jpg" class="card-img-top" style="height: 150px;">
                             <div class="card-body">
-                                <h5 class="card-title">Gli obiettivi della Agenda 2030</h5>
+                                <h5 class="card-title">Gli obiettivi della Agenda</h5>
                                 <p class="card-text">La Agenda 2030 comprende 17 Obiettivi di Sviluppo Sostenibile (ODS)
                                     che
                                     fungono da pietre miliari per il progresso sociale, economico e ambientale. Ogni
@@ -93,10 +96,135 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/collaborazione_mondiale.jpg" class="card-img-top"
+                                style="height: 150px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Collaborazione globale</h5>
+                                <p class="card-text">L'Agenda 2030 promuove la cooperazione tra paesi, organizzazioni
+                                    internazionali, settore privato e società civile per affrontare le sfide globali in
+                                    modo sinergico. Attraverso partenariati inclusivi e collaborativi, si mira a
+                                    massimizzare l'impatto delle azioni e delle risorse disponibili.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div obiettivi-->
+                <div style="padding-top: 80px;">
+                    <h3 style="padding-left: 150px;">Gli obiettivi</h3>
+                </div>
+                <!-- CAROUSEL -->
+                <div id="myCarousel" class="carousel slide mb-17" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9"
+                            aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10"
+                            aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="11"
+                            aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="12"
+                            aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="13"
+                            aria-label="Slide 14"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="14"
+                            aria-label="Slide 15"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="15"
+                            aria-label="Slide 16"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="16"
+                            aria-label="Slide 17"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/obiettivi2030/goal1.png" class="d-block w-100" alt="goal1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal2.png" class="d-block w-100" alt="goal2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal3.png" class="d-block w-100" alt="goal3" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal4.png" class="d-block w-100" alt="goal4" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal5.png" class="d-block w-100" alt="goal5" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal6.png" class="d-block w-100" alt="goal6" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal7.png" class="d-block w-100" alt="goal7" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal8.png" class="d-block w-100" alt="goal8" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal9.png" class="d-block w-100" alt="goal9" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal10.png" class="d-block w-100" alt="goal10" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal11.png" class="d-block w-100" alt="goal11" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal12.png" class="d-block w-100" alt="goal12" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal13.png" class="d-block w-100" alt="goal13" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal14.png" class="d-block w-100" alt="goal14" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal15.png" class="d-block w-100" alt="goal15" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal16.png" class="d-block w-100" alt="goal16" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/obiettivi2030/goal17.png" class="d-block w-100" alt="goal17" />
+                        </div>
+
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-
         </div>
+    </div>
+
+    </div>
     </div>
 
     <!-- JS Bootstrap -->
@@ -111,7 +239,10 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-<!--creato repo locale-->
+<!--creato repo locale ds-->
