@@ -10,3 +10,12 @@ a.navbar-favicon {
 a.nav-link-spacing {
     margin-left: 2%;
 }
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-height: 600px; /* Altezza massima delle immagini */
+    max-width: 800px; /* Larghezza massima delle immagini */
+  }
