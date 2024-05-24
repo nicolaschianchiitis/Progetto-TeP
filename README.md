@@ -1,6 +1,9 @@
 # Progetto-TeP
 Progetto TeP di fine anno
 
+# Link al sito hostato su Netlify
+https://ed-ambientale.netlify.app/
+
 # Link al sito hostato su GitHub Pages
 https://nicolaschianchiitis.github.io/Progetto-TeP/
 
