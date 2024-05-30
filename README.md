@@ -14,3 +14,9 @@ https://nicolaschianchiitis.github.io/Progetto-TeP/
 
 # Argomento:
 Educazione ambientale
+
+# Questo sito è stato realizzato con
+- Bootstrap v. 5.3
+- OpenAQ API (API libera e senza chiave per ottenere misurazioni in tempo reale di NO2)
+- HTML, CSS, JS
+- Hostato su GitHub Pages e su Netlify
