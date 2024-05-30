@@ -9,7 +9,12 @@ const APIerr = document.getElementById("APIerr");
 APIerr.style.display = "none";
 
 // URL API e parametri della richiesta
-const url = 'https://api.openaq.org/v2/averages?temporal=day&parameters_id=5&date_to=2024-05-24T09%3A00%3A00Z&date_from=2024-05-01T09%3A00%3A00Z&locations_id=8290&spatial=location&limit=100&page=1';
+let dataAttuale = new Date();
+let dataPrecedente = new Date();
+dataPrecedente.setDate(dataAttuale.getDate() - 1);
+let inizioMese = new Date(dataAttuale.getFullYear(), dataAttuale.getMonth(), 1);
+inizioMese.setDate(inizioMese.getDate() + 1);
+const url = `https://api.openaq.org/v2/averages?temporal=day&parameters_id=5&date_to=${dataPrecedente.toISOString().substring(0, 10)}T09%3A00%3A00Z&date_from=${inizioMese.toISOString().substring(0, 10)}T09%3A00%3A00Z&locations_id=8290&spatial=location&limit=100&page=1`;
 const options = {mode: 'cors', method: 'GET', headers: {accept: 'application/json'}};
 
 // Fethch API
