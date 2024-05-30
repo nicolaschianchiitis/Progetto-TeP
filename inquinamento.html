@@ -35,7 +35,7 @@
                     <a class="nav-item nav-link nav-link-spacing" href="effetti_inquinamemto.html">Effetti
                         dell'inquinamento</a>
                     <a class="nav-item nav-link nav-link-spacing" href="agenda2030.html">Agenda 2030</a>
-                    <a class="nav-item nav-link nav-link-spacing" href="inquinamento.html">Dati inquinamento pagine
+                    <a class="nav-item nav-link nav-link-spacing active text-primary-emphasis" href="inquinamento.html">Dati inquinamento pagine
                         web</a>
                 </div>
             </div>
@@ -43,44 +43,39 @@
     </div>
     <!-- Contenuto pagina -->
     <div class="container-xl text-center">
-        <h1 class="h1 text-primary-emphasis">Ma quanto inquinano le pagine web!?</h1>
+        <h1 class="h1 text-primary-emphasis">L'inquinamento intorno a noi</h1>
         <p>
-            Qui di seguito troverai dei dati statistici riguardanti l'inquinamento
-            generato dal caricamento di pagine Web,<br>sfruttando l'API pubblica
-            Website Carbon API
-            (<a href="https://api.websitecarbon.com/" class="text-primary-emphasis" target="_blank">
+            Qui di seguito troverai delle misurazioni riguardanti l'inquinamento
+            da NO<sub>2</sub>, ovvero il diossido d'azoto,
+            un gas velenoso, sfruttando l'API pubblica
+            OpenAQ API.<br>
+            (<a href="https://api.openaq.org/v2/" class="text-primary-emphasis" target="_blank">
+                endpoint
+            </a>)
+            (<a href="https://openaq.org" class="text-primary-emphasis" target="_blank">
                 sito web
             </a>)
         </p>
         <h4 class="h4">
-            Una pagina Web trasferisce
-            <span class="text-primary-emphasis" id="energiaDispersa">
-                ---
+            A Porta San Felice (Bologna), tra il<br>
+            <span class="text-primary-emphasis" id="data-inizio">
+                --/--/----
             </span>
-            kW/g di energia quando viene scaricata.
+            e il <span class="text-primary-emphasis" id="data-fine">
+                --/--/----
+            </span><br>
+            sono stati rilevati circa<br><span class="text-primary-emphasis" id="misura">
+                ---
+            </span> &micro;g/m<sup>3</sup> di NO<sub>2</sub>.
         </h4><br>
-        <h4 class="h4 text-center">Per quanto riguarda la CO<small>2</small>...</h4><br>
-        <table class="table shadow" style="width: 40%; margin-left: 30%;">
-            <thead>
-                <tr>
-                    <th scope="col">CO<small>2</small></th>
-                    <th scope="col">g</th>
-                    <th scope="col">L</th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row">Da fonti rinnovabili</th>
-                    <td class="text-primary-emphasis" id="gCO2rinn">---</td>
-                    <td class="text-primary-emphasis" id="LCO2rinn">---</td>
-                </tr>
-                <tr>
-                    <th scope="row">Dalla rete nazionale</th>
-                    <td class="text-primary-emphasis" id="gCO2retenaz">---</td>
-                    <td class="text-primary-emphasis" id="LCO2retenaz">---</td>
-                </tr>
-            </tbody>
-        </table>
+        <p class="p">
+            Questi dati sono stati ottenuti calcolando la media sulle misurazioni
+            ottenute dall'API,<br>che restituisce per ogni giornata la media di tante
+            misurazioni.<br><br>In totale sono state effettuate
+            <span class="text-primary-emphasis" id="misurazioniTot">
+                ---
+            </span> misurazioni.
+        </p>
     </div><br>
     <h4 class="h4 bg-danger rounded text-center p-2" style="display: none; width: 30%; margin-left: 35%;" id="APIerr">
         Errore di comunicazione con l'API...
