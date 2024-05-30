@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" data-bs-theme="dark">
+<html lang="it" data-bs-theme="dark" id="html">
 
 <head>
     <meta charset="utf-8">
@@ -13,9 +13,11 @@
     <style>
         @import url(css/style.css);
     </style>
+    <!-- Tema dinamico pagina -->
+    <script src="js/theme-refresh/dynamic-theme.js"></script>
 </head>
 
-<body>
+<body onload="setPreferredTheme()">
     <!-- Contenitore pagina -->
     <div class="container-xl">
         <!-- Navbar -->
@@ -35,7 +37,7 @@
                     <a class="nav-item nav-link nav-link-spacing" href="effetti_inquinamemto.html">Effetti
                         dell'inquinamento</a>
                     <a class="nav-item nav-link nav-link-spacing" href="agenda2030.html">Agenda 2030</a>
-                    <a class="nav-item nav-link nav-link-spacing active text-primary-emphasis"
+                    <a class="nav-item nav-link nav-link-spacing active text-primary"
                         href="inquinamento.html">Dati inquinamento</a>
                 </div>
             </div>
@@ -43,41 +45,41 @@
     </div>
     <!-- Contenuto pagina -->
     <div class="container-xl text-center">
-        <h1 class="h1 text-primary-emphasis">L'inquinamento intorno a noi</h1>
+        <h1 class="h1 text-primary">L'inquinamento intorno a noi</h1>
         <p>
             Qui di seguito troverai delle misurazioni riguardanti l'inquinamento
             da NO<sub>2</sub>, ovvero il diossido d'azoto,
             un gas velenoso, sfruttando l'API pubblica
             OpenAQ API.<br>
-            (<a href="https://api.openaq.org/v2/" class="text-primary-emphasis" target="_blank">
+            (<a href="https://api.openaq.org/v2/" class="text-primary" target="_blank">
                 endpoint
             </a>)
-            (<a href="https://openaq.org" class="text-primary-emphasis" target="_blank">
+            (<a href="https://openaq.org" class="text-primary" target="_blank">
                 sito web
             </a>)
         </p>
         <h4 class="h4">
             A Porta San Felice (Bologna), tra il<br>
-            <span class="text-primary-emphasis" id="data-inizio">
+            <span class="text-primary" id="data-inizio">
                 --/--/----
             </span>
-            e il <span class="text-primary-emphasis" id="data-fine">
+            e il <span class="text-primary" id="data-fine">
                 --/--/----
             </span><br>
-            sono stati rilevati circa<br><span class="text-primary-emphasis" id="misura">
+            sono stati rilevati circa<br><span class="text-primary" id="misura">
                 ---
-            </span><span class="text-primary-emphasis"> &micro;g/m<sup>3</sup></span> di
-            <span class="text-primary-emphasis">NO<sub>2</sub></span>.
+            </span><span class="text-primary"> &micro;g/m<sup>3</sup></span> di
+            <span class="text-primary">NO<sub>2</sub></span>.
         </h4><br>
         <p class="p">
             Questi dati sono stati ottenuti calcolando la media sulle misurazioni
             ottenute dall'API,<br>che restituisce per ogni giornata la media di tante
             misurazioni.<br><br>In totale sono state effettuate
-            <span class="text-primary-emphasis" id="misurazioniTot">
+            <span class="text-primary" id="misurazioniTot">
                 ---
             </span> misurazioni.
         </p><br>
-        <h1 class="h1 text-primary-emphasis">Valori di riferimento</h1>
+        <h1 class="h1 text-primary">Valori di riferimento</h1>
         <table class="table table-hover" style="width: 50%; margin-left: 25%; margin-top: 2%;">
             <thead>
                 <tr>
@@ -104,8 +106,8 @@
                     <td class="bg-danger">Scarsa</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="background-color: rgb(80, 26, 30);">201 &divide; 300</th>
-                    <td style="background-color: rgb(80, 26, 30);">Molto scarsa</td>
+                    <th scope="row" style="background-color: rgb(164, 23, 33);">201 &divide; 300</th>
+                    <td style="background-color: rgb(164, 23, 33);">Molto scarsa</td>
                 </tr>
             </tbody>
         </table>

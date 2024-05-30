@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" data-bs-theme="dark">
+<html lang="it" data-bs-theme="dark" id="html">
 
 <head>
     <meta charset="utf-8">
@@ -13,9 +13,11 @@
     <style>
         @import url(css/style.css);
     </style>
+    <!-- Tema dinamico pagina -->
+    <script src="js/theme-refresh/dynamic-theme.js"></script>
 </head>
 
-<body>
+<body onload="setPreferredTheme()">
     <!-- Contenitore pagina -->
     <div class="container-xl" style="padding-bottom: 2%;">
         <!-- Navbar -->
@@ -32,7 +34,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="nav-item nav-link nav-link-spacing" href="index.html">Home</a>
-                    <a class="nav-item nav-link nav-link-spacing active text-primary-emphasis"
+                    <a class="nav-item nav-link nav-link-spacing active text-primary"
                         href="effetti_inquinamemto.html">Effetti
                         dell'inquinamento</a>
                     <a class="nav-item nav-link nav-link-spacing" href="agenda2030.html">Agenda 2030</a>
