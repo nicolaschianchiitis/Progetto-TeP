@@ -52,13 +52,3 @@ function fetchData(){
         }
     });
 }
-
-/* .then(data => {
-    if (promise.ok) {
-        APIerr.style.display = "none";
-        let misurazioni = data.results;
-    }
-    else {
-        APIerr.style.display = "block"
-    }
-}) */
